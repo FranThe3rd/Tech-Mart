@@ -7,8 +7,10 @@ export const Product = (props) => {
             <div className='productInfo'>
             <img src={productImage} />
             <p><b>{productName}</b></p>
-            <p>${price}</p>
+            <p>${price}</p> 
+            <button className='addToCartBttn'>Add To Cart</button>         
             </div>
+            
             
         </div>
     )

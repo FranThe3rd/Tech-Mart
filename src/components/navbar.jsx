@@ -9,11 +9,11 @@ import './navbar.css'
 export const Navbar = () => {
     return (
         <div className='navbar'>
-         <h2>Pro Vision Mall</h2>
+         <h2>TechMart</h2>
             <div className='links'>
-                <Link to='/shop'><Bag size={32} /></Link>
+                <Link to='/'><Bag className='bag' size={32} /></Link>
                 <Link to='/cart'>
-                    <ShoppingCart size={32} />  
+                    <ShoppingCart className='cart' size={32} />  
                 </Link>
         </div>
         </div>
