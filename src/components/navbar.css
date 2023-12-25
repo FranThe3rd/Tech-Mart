@@ -52,4 +52,16 @@
   color: #5468ff;
 }
 
+.cartItemsNav {
+  padding-top: 4px;
+  padding-left: 2px;
+  padding-right: 2px;
+  background-color: #5468ff;
+  color: white;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  transition: all 0.3s ease 0s;
+}
+
 

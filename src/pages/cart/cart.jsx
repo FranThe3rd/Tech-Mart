@@ -9,7 +9,10 @@ export const Cart = () => {
 
    const navigate = useNavigate();
 
-  const {cartItems} = useContext(ShopContext);
+  const {cartItems,getTotalPrice} = useContext(ShopContext);
+
+  const totalPrice = getTotalPrice(cartItems);
+
 
   return (
     <div className='cart'>
@@ -22,12 +25,13 @@ export const Cart = () => {
             return (
               <CartItem data={product} /> 
             )
+          
             }}
        )}
       </div>
 
       <div className='checkout'>
-        <p>Total: $0</p>
+        <p>Total: ${totalPrice}</p>
         <button className='checkoutBT'>Checkout</button>
         <p></p>
         <button className='continue' onClick={() => navigate("/")}>Continue Shopping</button>

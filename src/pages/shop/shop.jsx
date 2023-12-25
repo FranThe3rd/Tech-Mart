@@ -1,7 +1,9 @@
-import React from 'react'
+import React, {useContext} from 'react'
 import './shop.css'
 import {PRODUCT_LIST} from './products.js'
 import Product from './product.jsx'
+import {ShopContext} from '../../context/shop-context.jsx';
+
 
 // Images
 import IphoneIMG from '../../slide-img/iPhone.jpg'
@@ -13,6 +15,7 @@ import HeadphonesIMG from '../../slide-img/headphones.jpg'
 
 //
 export const Shop = () => {
+
   const scrollToProducts = () => {
     const productsEl = document.getElementsByClassName('products')[0];
     productsEl.scrollIntoView({  
@@ -20,6 +23,9 @@ export const Shop = () => {
       inline: 'start' 
     });
   };
+
+
+
 
   return (
     <div className='shop'>
